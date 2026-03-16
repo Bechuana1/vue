@@ -26,6 +26,11 @@
                 return{
                     greeting: 'Hello World, what is up'
                 };
+            },
+            mounted(){
+                setTimeout(()=> {
+                    this.greeting = 'Changed';
+                },3000);
             }
         }).mount('#app');
     </script>
